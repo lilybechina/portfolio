@@ -5,20 +5,36 @@ Lily Bechina - lfb107@miami.edu
 
 ## Description
 Analyzing world sea ice extent in the peak melt months for each respective
-hemisphere* from 1979 - 2025 to show sea ice loss over time. 
+hemisphere* from 1979 - 2025 to show sea ice loss over time. Peak melt months 
+were chosen rather than the whole year for visualization purposes.
 
 *northern hemisphere peak melt month - september;
  southern hemisphere peak melt month - february 
 
-## Assignment Description
+## Assignment description
 Assignment 1 - creating the portfolio
 - objective: create and prepare the portfolio for future use
   
 Assignment 2 - data wrangling 
 - objective: load and clean data; create plots to visualize sea ice extent in
              the world from 1979 - 2026
+             
+# Repo contents
+data 
+- data/raw contains raw data downloaded directly from the web
+- data/processed contains processed data ready for analysis/visualization
 
-## Raw Data source
+results/img
+- contains figures that visualize the data
+
+scripts
+- scripts/01_processing contains a script to process and clean the raw data
+- scripts/03_content contains a script to analyze and visualize the data 
+
+README
+- informs collaborators about this repo
+
+## Raw data source
 National Oceanic and Atmospheric Administration (NOAA) / National Snow and Ice 
 Data Center (NSIDC)
 
