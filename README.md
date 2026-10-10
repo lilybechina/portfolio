@@ -24,8 +24,9 @@ Data Center (NSIDC)
 
 link: https://www.ncei.noaa.gov/access/monitoring/snow-and-ice-extent/
 
-Northern Hemisphere September Raw Data - sea_ice_sept_northern.csv
-Southern Hemisphere February Raw Data - sea_ice_feb_southern.csv
+Northern Hemisphere September Raw Data - sea_ice_sept_northern.csv  (path = "data/raw/sea_ice_sept_northern.csv")
+
+Southern Hemisphere February Raw Data - sea_ice_feb_southern.csv    (path = "data/raw/sea_ice_feb_southern.csv")
 
 ## R scripts
 data_processing.R                 (path = "scripts/processing/data_processing.R")
