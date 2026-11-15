@@ -46,9 +46,8 @@ Data Center (NSIDC)
 
 link: https://www.ncei.noaa.gov/access/monitoring/snow-and-ice-extent/
 
-NH Sept Raw Data - sea_ice_sept_northern.csv  (path = "data/raw/sea_ice_sept_northern.csv")
-
-SH Feb Raw Data - sea_ice_feb_southern.csv    (path = "data/raw/sea_ice_feb_southern.csv")
+- NH Sept Raw Data - sea_ice_sept_northern.csv  (path = "data/raw/sea_ice_sept_northern.csv")
+- SH Feb Raw Data - sea_ice_feb_southern.csv    (path = "data/raw/sea_ice_feb_southern.csv")
 
 ### .TIF files:
 
@@ -57,13 +56,10 @@ National Snow and Ice Data Center (NSIDC)
 link: https://nsidc.org/data/g02135/versions/4#anchor-data-access 
 (navigate to "HTTPS File System Location")
 
-NH Sept Max - N_198009_extent_v4.0.tif    (path = "data/raw/N_198009_extent_v4.0.tif")
-
-NH Sept Min - N_201209_extent_v4.0.tif    (path = "data/raw/N_201209_extent_v4.0.tif")
-
-SH Feb Max - S_200802_extent_v4.0.tif     (path = "data/raw/S_200802_extent_v4.0.tif")
-
-SH Feb Min - S_202302_extent_v4.0.tif     (path = "data/raw/S_202302_extent_v4.0.tif")
+- NH Sept Max - N_198009_extent_v4.0.tif    (path = "data/raw/N_198009_extent_v4.0.tif")
+- NH Sept Min - N_201209_extent_v4.0.tif    (path = "data/raw/N_201209_extent_v4.0.tif")
+- SH Feb Max - S_200802_extent_v4.0.tif     (path = "data/raw/S_200802_extent_v4.0.tif")
+- SH Feb Min - S_202302_extent_v4.0.tif     (path = "data/raw/S_202302_extent_v4.0.tif")
 
 ## R scripts
 data_processing.R                 (path = "scripts/processing/data_processing.R")
