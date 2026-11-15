@@ -8,8 +8,8 @@ Analyzing world sea ice extent in the peak melt months for each respective
 hemisphere* from 1979 - 2025 to show sea ice loss over time. Peak melt months 
 were chosen rather than the whole year for visualization purposes.
 
-*northern hemisphere peak melt month - september;
- southern hemisphere peak melt month - february 
+*northern hemisphere (NH) peak melt month - september;
+ southern hemisphere (SH) peak melt month - february 
 
 ## Assignment description
 Assignment 1 - creating the portfolio
@@ -46,9 +46,9 @@ Data Center (NSIDC)
 
 link: https://www.ncei.noaa.gov/access/monitoring/snow-and-ice-extent/
 
-Northern Hemisphere September Raw Data - sea_ice_sept_northern.csv  (path = "data/raw/sea_ice_sept_northern.csv")
+NH Sept Raw Data - sea_ice_sept_northern.csv  (path = "data/raw/sea_ice_sept_northern.csv")
 
-Southern Hemisphere February Raw Data - sea_ice_feb_southern.csv    (path = "data/raw/sea_ice_feb_southern.csv")
+SH Feb Raw Data - sea_ice_feb_southern.csv    (path = "data/raw/sea_ice_feb_southern.csv")
 
 ### .TIF files:
 
@@ -57,13 +57,13 @@ National Snow and Ice Data Center (NSIDC)
 link: https://nsidc.org/data/g02135/versions/4#anchor-data-access 
 (navigate to "HTTPS File System Location")
 
-Northern Hemisphere September Maximum - N_198009_extent_v4.0.tif                   (path = "data/raw/N_198009_extent_v4.0.tif")
+NH Sept Max - N_198009_extent_v4.0.tif    (path = "data/raw/N_198009_extent_v4.0.tif")
 
-Northern Hemisphere September Minimum - N_201209_extent_v4.0.tif    (path = "data/raw/N_201209_extent_v4.0.tif")
+NH Sept Min - N_201209_extent_v4.0.tif    (path = "data/raw/N_201209_extent_v4.0.tif")
 
-Southern Hemisphere February Maximum - S_200802_extent_v4.0.tif     (path = "data/raw/S_200802_extent_v4.0.tif")
+SH Feb Max - S_200802_extent_v4.0.tif     (path = "data/raw/S_200802_extent_v4.0.tif")
 
-Southern Hemisphere February Minimum - S_202302_extent_v4.0.tif     (path = "data/raw/S_202302_extent_v4.0.tif")
+SH Feb Min - S_202302_extent_v4.0.tif     (path = "data/raw/S_202302_extent_v4.0.tif")
 
 ## R scripts
 data_processing.R                 (path = "scripts/processing/data_processing.R")
@@ -85,7 +85,9 @@ hem_ice_extent                    (path = "results/img/hem_ice_extent.png")
 hem_extent_dist                   (path = "results/img/hem_extent_dist.png")
 
 northern_max                      (path = "results/img/northern_max.png")
+
 northern_min                      (path = "results/img/northern_min.png")
                      
 southern_max                      (path = "results/img/southern_max.png")
+
 southern_min                      (path = "results/img/southern_min.png")
