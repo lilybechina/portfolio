@@ -57,7 +57,7 @@ National Snow and Ice Data Center (NSIDC)
 link: https://nsidc.org/data/g02135/versions/4#anchor-data-access 
 (navigate to "HTTPS File System Location")
 
-Northern Hemisphere September Maximum - N_198009_extent_v4.0.tif    (path = "data/raw/N_198009_extent_v4.0.tif")
+Northern Hemisphere September Maximum - N_198009_extent_v4.0.tif                   (path = "data/raw/N_198009_extent_v4.0.tif")
 
 Northern Hemisphere September Minimum - N_201209_extent_v4.0.tif    (path = "data/raw/N_201209_extent_v4.0.tif")
 
