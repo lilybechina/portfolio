@@ -43,6 +43,7 @@ README
 
 National Oceanic and Atmospheric Administration (NOAA) / National Snow and Ice 
 Data Center (NSIDC)
+
 link: https://www.ncei.noaa.gov/access/monitoring/snow-and-ice-extent/
 
 Northern Hemisphere September Raw Data - sea_ice_sept_northern.csv  (path = "data/raw/sea_ice_sept_northern.csv")
@@ -52,13 +53,16 @@ Southern Hemisphere February Raw Data - sea_ice_feb_southern.csv    (path = "dat
 ### .TIF files:
 
 National Snow and Ice Data Center (NSIDC)
+
 link: https://nsidc.org/data/g02135/versions/4#anchor-data-access 
 (navigate to "HTTPS File System Location")
 
 Northern Hemisphere September Maximum - N_198009_extent_v4.0.tif    (path = "data/raw/N_198009_extent_v4.0.tif")
+
 Northern Hemisphere September Minimum - N_201209_extent_v4.0.tif    (path = "data/raw/N_201209_extent_v4.0.tif")
 
 Southern Hemisphere February Maximum - S_200802_extent_v4.0.tif     (path = "data/raw/S_200802_extent_v4.0.tif")
+
 Southern Hemisphere February Minimum - S_202302_extent_v4.0.tif     (path = "data/raw/S_202302_extent_v4.0.tif")
 
 ## R scripts
