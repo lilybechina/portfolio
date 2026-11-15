@@ -8,16 +8,22 @@
 # hemisphere together, cleaning & tidying the data
 ################################################################################  
 
-# Load packages
+# SET UP #######################################################################
+
+## Load packages ---------------------------------------------------------------
 library(tidyverse)
 library(janitor)
 
-# Read data, skip metadata (using relative paths)
+## Load data -------------------------------------------------------------------
+
+# Skip metadata, use relative paths
 sea_ice_sept_northern <- read_csv(file = "data/raw/sea_ice_sept_northern.csv",
                           skip = 4)
 
 sea_ice_feb_southern <- read_csv(file = "data/raw/sea_ice_feb_southern.csv",
                           skip = 4)
+
+# PROCESSING ###################################################################
 
 # Add columns to delineate northern vs. southern hemisphere
 sea_ice_sept_northern <- sea_ice_sept_northern |> 
@@ -38,9 +44,26 @@ sea_ice_total_world <- sea_ice_by_hem |>
   group_by(year) |> 
   summarise(value = sum(value))
 
-# Write data (export the new tables using relative paths)
+# ANALYSIS #####################################################################
+
+# Find which year has the max and min extent in each hemisphere
+north_max <- sea_ice_sept_northern$Date[sea_ice_sept_northern$Value == max(sea_ice_sept_northern$Value)]
+north_min <- sea_ice_sept_northern$Date[sea_ice_sept_northern$Value == min(sea_ice_sept_northern$Value)]
+
+south_max <- sea_ice_feb_southern$Date[sea_ice_feb_southern$Value == max(sea_ice_feb_southern$Value)]
+south_min <- sea_ice_feb_southern$Date[sea_ice_feb_southern$Value == min(sea_ice_feb_southern$Value)]
+
+# EXPORT #######################################################################
+
+## Using relative paths
 write_rds(x = sea_ice_by_hem, file = "data/processed/sea_ice_by_hem.rds")
 write_rds(x = sea_ice_total_world, file = "data/processed/sea_ice_total_world.rds")
+
+
+
+
+
+
   
 
 
