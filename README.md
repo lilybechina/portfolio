@@ -39,7 +39,8 @@ README
 - informs collaborators about this repo
 
 ## Raw data source
-.CSV files:
+### .CSV files:
+
 National Oceanic and Atmospheric Administration (NOAA) / National Snow and Ice 
 Data Center (NSIDC)
 link: https://www.ncei.noaa.gov/access/monitoring/snow-and-ice-extent/
@@ -48,7 +49,8 @@ Northern Hemisphere September Raw Data - sea_ice_sept_northern.csv  (path = "dat
 
 Southern Hemisphere February Raw Data - sea_ice_feb_southern.csv    (path = "data/raw/sea_ice_feb_southern.csv")
 
-.TIF files:
+### .TIF files:
+
 National Snow and Ice Data Center (NSIDC)
 link: https://nsidc.org/data/g02135/versions/4#anchor-data-access 
 (navigate to "HTTPS File System Location")
