@@ -1,89 +1,72 @@
-# EVR 628 Portfolio - World Sea Ice Analysis
+# Sea Ice Analysis by Hemisphere
+Author: Lily Bechina - lfb107@miami.edu
 
-## Author
-Lily Bechina - lfb107@miami.edu
+This project uses world sea ice extent data from the National Snow and Ice Data 
+Center. Data is used to visualize sea ice in the peak melt months by each 
+respective hemisphere* from 1979 - 2025 to show sea ice loss over time. Peak
+melt months were chosen rather than the whole year for visualization purposes.
 
-## Description
-Analyzing world sea ice extent in the peak melt months for each respective
-hemisphere* from 1979 - 2025 to show sea ice loss over time. Peak melt months 
-were chosen rather than the whole year for visualization purposes.
+*northern hemisphere (NH) peak melt month - September;
+ southern hemisphere (SH) peak melt month - February 
 
-*northern hemisphere (NH) peak melt month - september;
- southern hemisphere (SH) peak melt month - february 
+## Data Sources
 
-## Assignment description
-Assignment 1 - creating the portfolio
-- objective: create and prepare the portfolio for future use
-  
-Assignment 2 - data wrangling 
-- objective: load and clean data; create plots to visualize sea ice extent in
-             the world from 1979 - 2026
-             
-Assignment 3 - visualizing spatial data
-- objective: create 4 maps to visualize minimum and maximum sea ice extent in 
-             both hemispheres
-             
-# Repo contents
-data 
-- data/raw contains raw data downloaded directly from the web
-- data/processed contains processed data ready for analysis & visualization
+### 'data/raw/sea_ice_sept_northern.csv'
 
-results/img
-- contains figures that visualize the data
+- **Title of the dataset:** Sea Ice / Northern Hemisphere / September
+- **Source:** https://www.ncei.noaa.gov/access/monitoring/snow-and-ice-extent/sea-ice/N/9
+- **Date of download or access, if relevant:** Oct 8, 2026
 
-scripts
-- scripts/01_processing contains scripts to process and clean the raw data
-- scripts/03_content contains scripts to analyze and visualize the data 
+### 'data/raw/sea_ice_feb_southern.csv'
 
-README
-- informs collaborators about this repo
+- **Title of the dataset:** Sea Ice / Southern Hemisphere / February
+- **Source:** https://www.ncei.noaa.gov/access/monitoring/snow-and-ice-extent/sea-ice/S/2
+- **Date of download or access, if relevant:** Oct 8, 2026
 
-## Raw data source
-### .CSV files:
+### 'data/raw/N_198009_extent_v4.0.tif'
 
-National Oceanic and Atmospheric Administration (NOAA) / National Snow and Ice 
-Data Center (NSIDC)
+- **Title of the dataset:** Sea Ice / Northern Hemisphere / September / 1980
+- **Source:** https://nsidc.org/data/g02135/versions/4#anchor-data-access 
+- **Date of download or access, if relevant:** Nov 11, 2026
 
-link: https://www.ncei.noaa.gov/access/monitoring/snow-and-ice-extent/
+### 'data/raw/N_201209_extent_v4.0.tif'
 
-- NH Sept Raw Data - sea_ice_sept_northern.csv  (path = "data/raw/sea_ice_sept_northern.csv")
-- SH Feb Raw Data - sea_ice_feb_southern.csv    (path = "data/raw/sea_ice_feb_southern.csv")
+- **Title of the dataset:** Sea Ice / Northern Hemisphere / September / 2012
+- **Source:** https://nsidc.org/data/g02135/versions/4#anchor-data-access 
+- **Date of download or access, if relevant:** Nov 11, 2026
 
-### .TIF files:
+### 'data/raw/S_200802_extent_v4.0.tif'
 
-National Snow and Ice Data Center (NSIDC)
+- **Title of the dataset:** Sea Ice / Southern Hemisphere / February / 2008
+- **Source:** https://nsidc.org/data/g02135/versions/4#anchor-data-access 
+- **Date of download or access, if relevant:** Nov 11, 2026
 
-link: https://nsidc.org/data/g02135/versions/4#anchor-data-access 
-(navigate to "HTTPS File System Location")
+### 'data/raw/S_202302_extent_v4.0.tif'
 
-- NH Sept Max - N_198009_extent_v4.0.tif    (path = "data/raw/N_198009_extent_v4.0.tif")
-- NH Sept Min - N_201209_extent_v4.0.tif    (path = "data/raw/N_201209_extent_v4.0.tif")
-- SH Feb Max - S_200802_extent_v4.0.tif     (path = "data/raw/S_200802_extent_v4.0.tif")
-- SH Feb Min - S_202302_extent_v4.0.tif     (path = "data/raw/S_202302_extent_v4.0.tif")
+- **Title of the dataset:** Sea Ice / Southern Hemisphere / February / 2023
+- **Source:** https://nsidc.org/data/g02135/versions/4#anchor-data-access 
+- **Date of download or access, if relevant:** Nov 11, 2026
 
-## R scripts
-data_processing.R                 (path = "scripts/processing/data_processing.R")
+## Repository structure and contents
 
-exploratory_data_visualization.R  (path = "scripts/content/exploratory_data_visualization.R")
-
-spatial_data_visualization.R      (path = scripts/content/spatial_data_visualization.R")
-
-## Clean data (produced in processing script)
-sea_ice_world.rds                 (path = "data/processed/sea_ice_world.rds")
-
-sea_ice_by_hem.rds                (path = "data/processed/sea_ice_by_hem.rds")
-
-## Figures (produced in visualization scripts)
-global_ice_extent                 (path = "results/img/global_ice_extent.png")
-
-hem_ice_extent                    (path = "results/img/hem_ice_extent.png")
-
-hem_extent_dist                   (path = "results/img/hem_extent_dist.png")
-
-northern_max                      (path = "results/img/northern_max.png")
-
-northern_min                      (path = "results/img/northern_min.png")
-                     
-southern_max                      (path = "results/img/southern_max.png")
-
-southern_min                      (path = "results/img/southern_min.png")
+- 'data': Contains the raw, processed, and output data
+  - 'data/raw/sea_ice_sept_northern.csv': Raw sea ice extent data for the NH in Sept
+  - 'data/raw/sea_ice_feb_southern.csv': Raw sea ice extent data for the SH in Feb
+  - 'data/raw/N_198009_extent_v4.0.tif': Raw sea ice extent spatial data for the NH in Sept 1980
+  - 'data/raw/N_201209_extent_v4.0.tif': Raw sea ice extent spatial data for the NH in Sept 2012
+  - 'data/raw/S_200802_extent_v4.0.tif': Raw sea ice extent spatial data for the SH in Feb 2008
+  - 'data/raw/S_202302_extent_v4.0.tif': Raw sea ice extent spatial data for the SH in Feb 2023
+  - 'data/processed/sea_ice_by_hem.rds': Sea ice extent by hemisphere by year, produced by 'scripts/processing/data_processing.R'
+  - 'data/processed/sea_ice_total_world.rds': Sea ice extent for the world by year, produced by 'scripts/processing/data_processing.R'
+- 'scripts': Contains all R scripts used in this project
+ - 'scripts/processing/data_processing.R': This file reads 'data/raw/sea_ice_sept_northern.csv' and 'data/raw/sea_ice_feb_southern.csv', cleans and merges the data, adds a hemisphere row, exports 'data/processed/sea_ice_by_hem.rds' and 'data/processed/sea_ice_total_world.rds'
+ - 'scripts/content/exploratory_data_visualization.R': This file reads 'data/processed/sea_ice_by_hem.rds' and 'data/processed/sea_ice_total_world.rds', and confiugres 3 plots to visualize the data, exports 'results/img/global_ice_extent.png', 'results/img/hem_ice_extent.png' and 'results/img/hem_extent_dist.png'
+ - 'scripts/content/spatial_data_visualization.R': This file reads 'data/raw/N_198009_extent_v4.0.tif', 'data/raw/N_201209_extent_v4.0.tif', 'data/raw/S_200802_extent_v4.0.tif', 'data/raw/S_202302_extent_v4.0.tif', and 'data/processed/sea_ice_by_hem.rds' and creates 4 maps to visualize the spatial extent of ice over time by hemisphere, exports 'results/img/northern_max.png', 'results/img/northern_min.png', 'results/img/southern_max.png', 'results/img/southern_min.png'
+- 'results': Contains all outputs
+  - 'results/img/global_ice_extent.png': Plot of global sea ice extent over time, produced by 'scripts/content/exploratory_data_visualization.R'
+  - 'results/img/hem_ice_extent.png': Plot of sea ice extent by hemisphere over time, produced by 'scripts/content/exploratory_data_visualization.R'
+  - 'results/img/hem_extent_dist.png': Plot of distribution of sea ice extent values by hemisphere, produced by 'scripts/content/exploratory_data_visualization.R' 
+  - 'results/img/northern_max.png': Map of NH maximum sea ice extent in Sept, produced by 'scripts/content/spatial_data_visualization.R'
+  - 'results/img/northern_min.png': Map of NH minimum sea ice extent in Sept, produced by 'scripts/content/spatial_data_visualization.R'
+  - 'results/img/southern_max.png': Map of SH maximum sea ice extent in Feb, produced by 'scripts/content/spatial_data_visualization.R'
+  - 'results/img/southern_min.png': Map of SH minimum sea ice extent in Feb, produced by 'scripts/content/spatial_data_visualization.R'
