@@ -175,15 +175,3 @@ ggsave(plot = northern_min, filename = "results/img/northern_min.png")
 
 ggsave(plot = southern_max, filename = "results/img/southern_max.png")
 ggsave(plot = southern_min, filename = "results/img/southern_min.png")
-
-
-
-
-
-
-
-
-
-
-
-

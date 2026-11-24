@@ -58,13 +58,3 @@ south_min <- sea_ice_feb_southern$Date[sea_ice_feb_southern$Value == min(sea_ice
 ## Using relative paths
 write_rds(x = sea_ice_by_hem, file = "data/processed/sea_ice_by_hem.rds")
 write_rds(x = sea_ice_total_world, file = "data/processed/sea_ice_total_world.rds")
-
-
-
-
-
-
-  
-
-
-

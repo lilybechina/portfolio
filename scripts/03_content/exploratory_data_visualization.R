@@ -70,11 +70,3 @@ hem_extent_dist <- ggplot(data = sea_ice_by_hem,
 ggsave(plot = global_ice_extent, filename = "results/img/global_ice_extent.png")
 ggsave(plot = hem_ice_extent, filename = "results/img/hem_ice_extent.png")
 ggsave(plot = hem_extent_dist, filename = "results/img/hem_extent_dist.png")
-
-
-
-
-
-
-
-
